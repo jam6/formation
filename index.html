@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formations BTS SIO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .btn-primary {
+            background-color: #0056b3;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #003d80;
+        }
+        .card-body:nth-child(1) {
+            background-color: #f8d7da;
+        }
+        .card-body:nth-child(2) {
+            background-color: #d1ecf1;
+        }
+        .card-body:nth-child(3) {
+            background-color: #d4edda;
+        }
+        .card-body:nth-child(4) {
+            background-color: #fff3cd;
+        }
+        .card-body:nth-child(5) {
+            background-color: #cce5ff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">BTS SIO Formations</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#formations">Formations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5">
+        <h1 class="fw-bold">Bienvenue sur BTS SIO Formations</h1>
+        <p class="lead">Découvrez nos formations pour réussir votre BTS SIO</p>
+        <p class="fst-italic">"Former, inspirer et préparer les futurs experts en informatique d'aujourd'hui et de demain."</p>
+    </header>
+
+    <section id="formations" class="container my-5">
+        <h2 class="text-center fw-bold mb-4">Nos Formations</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body" style="background-color: #f8d7da;">
+                        <h5 class="card-title fw-bold">💻 Programmation (POO)</h5>
+                        <p class="card-text">Langages : Java, PHP, Python.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body" style="background-color: #d1ecf1;">
+                        <h5 class="card-title fw-bold">🗄️ SGBD</h5>
+                        <p class="card-text">Technologies : MySQL, SQL Server, PL/SQL, PostgreSQL.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body" style="background-color: #d4edda;">
+                        <h5 class="card-title fw-bold">👨‍💼 E5 - Pratique professionnelle</h5>
+                        <p class="card-text">Développement des compétences en milieu professionnel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4 mt-2">
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body" style="background-color: #fff3cd;">
+                        <h5 class="card-title fw-bold">📐 E4 - Conception et maintenance</h5>
+                        <p class="card-text">Soutenance et compétences acquises lors du stage.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body" style="background-color: #cce5ff;">
+                        <h5 class="card-title fw-bold">🔒 E6 - Cybersécurité des services informatiques</h5>
+                        <p class="card-text">Sécurisation des services informatiques et gestion des risques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">Contactez-nous</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 BTS SIO Formations. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
