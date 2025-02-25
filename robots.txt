@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jam6.github.io/formation/sitemap.xml
